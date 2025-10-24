@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Header } from './components/Header';
 import { QuestionnaireForm } from './components/QuestionnaireForm';
-import { Footer } from './components/Footer';
 import { questionnaireData } from './constants/questions';
 import { Language, FormData, Question, Section, PhotoData } from './types';
 import { DataChart } from './components/DataChart';
@@ -214,7 +213,7 @@ function App() {
     <div className="bg-slate-50 min-h-screen font-sans">
       <div id="capture-area" className="container mx-auto max-w-4xl bg-white shadow-lg">
         <Header language={language} setLanguage={setLanguage} />
-        <main className="px-4 py-8 pb-24">
+        <main className="px-4 py-8">
             <QuestionnaireForm
             questionnaire={questionnaireData}
             language={language}
@@ -225,10 +224,11 @@ function App() {
             onRemovePhoto={handleRemovePhoto}
             onDescriptionChange={handlePhotoDescriptionChange}
             errors={errors}
+            onExport={handleExport}
+            isSaving={isSaving}
             />
         </main>
       </div>
-      <Footer onExport={handleExport} isSaving={isSaving} language={language} />
       
       {showChart && (
         <DataChart 
