@@ -214,7 +214,7 @@ function App() {
     <div className="bg-slate-50 min-h-screen font-sans">
       <div id="capture-area" className="container mx-auto max-w-4xl bg-white shadow-lg">
         <Header language={language} setLanguage={setLanguage} />
-        <main className="px-4 py-8">
+        <main className="px-4 py-8 pb-24">
             <QuestionnaireForm
             questionnaire={questionnaireData}
             language={language}
