@@ -1,0 +1,5 @@
+{
+  "name": "SOLARIUM Solar Project Questionnaire",
+  "description": "A comprehensive technical questionnaire to collect necessary data for estimating the feasibility of a solar project for SOLARIUM. It supports both Thai and English languages and allows exporting the filled form as a professional report.",
+  "requestFramePermissions": []
+}
