@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
   };
 
   const title = language === 'th' ? 'แบบสอบถามสำหรับประเมินการติดตั้งโซล่าเซลล์' : 'Solar Cell Installation Assessment Questionnaire';
-  const subtitle = language === 'th' ? 'โดย SOLARIUM' : 'By SOLARIUM';
+  const subtitle = language === 'th' ? 'โดย Kris Laohasiri - Tel/WhatApp : +66(0)818519922' : 'By Kris Laohasiri - Tel/WhatApp : +66(0)818519922';
 
   return (
     <header className="bg-white p-4 print:shadow-none border-b border-slate-200">
