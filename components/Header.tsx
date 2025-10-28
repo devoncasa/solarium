@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({ language, setLanguage }) => {
           <img 
             src="https://raw.githubusercontent.com/devoncasa/Tempa123-Asset/main/solar-logo.webp" 
             alt="SOLARIUM Logo" 
-            className="h-12 w-12 object-contain" 
+            className="h-16 w-16 object-contain" 
           />
           <div>
             <h1 className="text-xl sm:text-2xl font-bold text-slate-800">{title}</h1>
